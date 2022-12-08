@@ -1,0 +1,150 @@
+nav{
+    background:transparent;
+    width: 100%;
+    z-index: 2;
+    top:0;
+    left: 0;
+}
+.nav-body{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #fff;
+}
+.fixed-nav{
+    position: fixed;
+}
+.links{
+    height: auto;
+}
+.links li{
+    padding-left: 30px;
+    padding-right: 30px;
+    display: inline;
+
+}
+.links a{
+    text-decoration: none;
+    color:black;
+}
+.nav-toggle{
+    display: none;
+}
+.logo-small{
+    display: none;
+}
+.header{
+    text-align: center;
+    margin-top: 30px;
+}
+.header h3{
+    font-weight: lighter;
+}
+.container{
+    margin:30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+.pics{
+    max-width: 100%;
+}
+.wedding{
+    position: relative;
+}
+.wedding button{
+    position: absolute;
+    top: 10%;
+    left: 75%;
+    background-color: #555;
+    color: #fff;
+    border-radius: 25px;
+    padding: 5px;
+}
+.wedding button a{
+    text-decoration: none;
+    color: #fff;
+}
+.parties{
+    position: relative;
+}
+.parties button{
+    position: absolute;
+    top: 10%;
+    left: 75%;
+    background-color: #555;
+    color: #fff;
+    border-radius: 25px;
+    padding: 5px;
+}
+.parties button a{
+    text-decoration: none;
+    color: #fff;
+}
+.corporate{
+    position: relative;
+}
+.corporate button{
+    position: absolute;
+    top: 10%;
+    left: 60%;
+    background-color: #555;
+    color: #fff;
+    border-radius: 25px;
+    padding: 5px;
+}
+.corporate button a{
+    text-decoration: none;
+    color: #fff;
+}
+.footer{
+    background-color: black;
+    color: #fff;
+    text-align: center;
+}
+.footer-links{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 10px;
+}
+.footer-links a{
+    color: #fff;
+    font-size: 1rem;
+    text-decoration: none;
+}
+@media (max-width:676px){
+    .nav-body{
+        justify-content: space-between;
+    }
+    .logo{
+        display: none;
+    }
+    .logo-small{
+        display: inline;
+        margin-left: 10px;
+    }
+    .links{
+        height:0;
+        overflow: hidden;
+        text-align: center;
+    }
+    .links a{
+        display: block;
+    }
+    .show-links{
+        height:10rem;
+    }
+    .nav-toggle{
+        display: block;
+        background: transparent;
+        border: none;
+    }
+    .container{
+        grid-template-columns: auto;
+    }
+    .footer-links{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

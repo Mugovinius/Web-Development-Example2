@@ -1,0 +1,153 @@
+nav{
+    background:transparent;
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+    top:0;
+    left: 0;
+}
+.nav-body{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #fff;
+}
+.colored-nav .links a{
+    color:black;
+}
+.colored-nav .nav-toggle{
+    color: black;
+}
+.links{
+    height: auto;
+}
+.links li{
+    padding-left: 30px;
+    padding-right: 30px;
+    display: inline;
+
+}
+.links a{
+    text-decoration: none;
+    color:#fff;
+}
+.pic{
+    max-width: 100%;
+    position: relative;
+    z-index: 0;
+}
+.nav-toggle{
+    display: none;
+}
+.logo-small{
+    display: none;
+}
+.header{
+    width: 850px;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    z-index: 2;
+    top: 300px;
+    left: 300px;
+}
+.myform{
+    width: 850px;
+    text-align: center;
+    color:black;
+    position: absolute;
+    z-index: 1;
+    top: 600px;
+    left: 300px;
+    background-color: #fff;
+}
+.myinputs{
+    width: 600px;
+    border-radius: 25px;
+    padding: 10px;
+}
+.mytextarea{
+    width: 600px;
+    border-radius: 25px;
+    padding: 20px;
+}
+.mysubmit{
+    padding:20px;
+    width: 400px;
+    border-radius: 25px;
+    background-color: darkblue;
+    color: #fff;
+}
+.footer{
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    top: 550px;
+    position: relative;
+}
+.footer-links{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 10px;
+}
+.footer-links a{
+    color: #fff;
+    font-size: 1rem;
+    text-decoration: none;
+}
+@media (max-width:676px){
+    .nav-body{
+        justify-content: space-between;
+    }
+    .logo{
+        display: none;
+    }
+    .logo-small{
+        display: inline;
+        margin-left: 10px;
+    }
+    .links{
+        height:0;
+        overflow: hidden;
+        text-align: center;
+    }
+    .links a{
+        display: block;
+    }
+    .show-links{
+        height:10rem;
+    }
+    .nav-toggle{
+        display: block;
+        background: transparent;
+        border: none;
+        color: #fff;
+    }
+    .header{
+        width: auto;
+        top: 90px;
+        left: 0;
+        padding: 5px;
+    }
+    .myform{
+        width: auto;
+        top: 0;
+        left: 0;
+        padding: 10px;
+        position: relative;
+    }
+    .myinputs{
+        width: 400px;
+    }
+    .mytextarea{
+        width: 400px;
+    }
+    .footer{
+        top: 10px;
+    }
+    .footer-links{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
